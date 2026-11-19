@@ -87,18 +87,30 @@ section h3 {
 }
 
 .participants-list {
-  padding-left: 20px;
+  padding: 0;
   color: #475569;
   overflow-wrap: anywhere;
+  list-style: none;
 }
 
 .participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   margin-bottom: 4px;
-  padding-left: 2px;
 }
 
-.participants-list li::marker {
-  color: #16806a;
+.participant-remove-button {
+  flex: 0 0 auto;
+  padding: 4px 8px;
+  background-color: transparent;
+  color: #c62828;
+  font-size: 16px;
+}
+
+.participant-remove-button:hover {
+  background-color: #ffebee;
 }
 
 .participants-empty {
